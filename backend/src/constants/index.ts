@@ -28,3 +28,13 @@ export {
   type ProductDefaultsType,
   type ProductLimitsType,
 } from './product';
+
+/**
+ * Category constants
+ */
+export {
+  CATEGORY_DEFAULTS,
+  CATEGORY_LIMITS,
+  type CategoryDefaultsType,
+  type CategoryLimitsType,
+} from './category';

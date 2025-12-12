@@ -9,6 +9,7 @@
 import { Router } from 'express';
 import * as initExampleController from '@/api/internal/init-example/controller';
 import * as productController from '@/api/internal/product/controller';
+import * as categoryController from '@/api/internal/category/controller';
 
 const router = Router();
 
@@ -28,5 +29,17 @@ router.delete('/init-example/:id', initExampleController.deleteHandler);
  */
 router.get('/product', productController.listHandler);
 router.get('/product/:id', productController.getHandler);
+
+/**
+ * @rule {be-route-configuration}
+ * Category routes - /api/internal/category
+ */
+router.get('/category', categoryController.listHandler);
+router.get('/category/featured', categoryController.getFeaturedHandler);
+router.get('/category/slug/:slug', categoryController.getBySlugHandler);
+router.get('/category/:id', categoryController.getHandler);
+router.post('/category', categoryController.createHandler);
+router.put('/category/:id', categoryController.updateHandler);
+router.delete('/category/:id', categoryController.deleteHandler);
 
 export default router;

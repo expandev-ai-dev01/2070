@@ -15,3 +15,8 @@ export { initExampleStore, type InitExampleRecord } from './initExample';
  * Product instances
  */
 export { productStore, type ProductRecord } from './product';
+
+/**
+ * Category instances
+ */
+export { categoryStore, type CategoryRecord } from './category';
