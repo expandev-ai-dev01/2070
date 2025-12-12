@@ -52,7 +52,7 @@ export const updateSchema = z.object({
 /**
  * Schema for ID parameter validation
  */
-export const paramsSchema = z.object({
+export const initExampleParamsSchema = z.object({
   id: z.coerce.number().int().positive(),
 });
 
@@ -62,4 +62,4 @@ export const paramsSchema = z.object({
 export type MetadataInput = z.infer<typeof metadataSchema>;
 export type CreateInput = z.infer<typeof createSchema>;
 export type UpdateInput = z.infer<typeof updateSchema>;
-export type ParamsInput = z.infer<typeof paramsSchema>;
+export type InitExampleParamsInput = z.infer<typeof initExampleParamsSchema>;
