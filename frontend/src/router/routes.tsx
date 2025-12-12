@@ -9,6 +9,9 @@ const HomePage = lazy(() =>
 const CatalogPage = lazy(() =>
   import('@/pages/Catalog').then((module) => ({ default: module.CatalogPage }))
 );
+const ProductDetailPage = lazy(() =>
+  import('@/pages/ProductDetail').then((module) => ({ default: module.ProductDetailPage }))
+);
 const NotFoundPage = lazy(() =>
   import('@/pages/NotFound').then((module) => ({ default: module.NotFoundPage }))
 );
@@ -35,6 +38,10 @@ const routes = createBrowserRouter([
       {
         path: 'catalog',
         element: <CatalogPage />,
+      },
+      {
+        path: 'product/:id',
+        element: <ProductDetailPage />,
       },
       {
         path: '*',

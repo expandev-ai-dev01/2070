@@ -63,3 +63,26 @@ export type {
   CategoryParamsInput,
   CategorySlugParamsInput,
 } from './category';
+
+export {
+  productImageList,
+  productImageGet,
+  productImageCreate,
+  productImageUpdate,
+  productImageDelete,
+  productImageReorder,
+} from './productImage';
+
+export type {
+  ProductImageEntity,
+  ProductImageCreateRequest,
+  ProductImageUpdateRequest,
+  ProductImageReorderRequest,
+  ImageReorderItem,
+  ViewAngle,
+  CreateInput as ProductImageCreateInput,
+  UpdateInput as ProductImageUpdateInput,
+  ReorderInput as ProductImageReorderInput,
+  ProductImageParamsInput,
+  ProductIdParamsInput,
+} from './productImage';

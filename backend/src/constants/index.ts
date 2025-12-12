@@ -38,3 +38,13 @@ export {
   type CategoryDefaultsType,
   type CategoryLimitsType,
 } from './category';
+
+/**
+ * Product Image constants
+ */
+export {
+  PRODUCT_IMAGE_DEFAULTS,
+  PRODUCT_IMAGE_LIMITS,
+  type ProductImageDefaultsType,
+  type ProductImageLimitsType,
+} from './productImage';

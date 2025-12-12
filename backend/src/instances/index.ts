@@ -20,3 +20,8 @@ export { productStore, type ProductRecord } from './product';
  * Category instances
  */
 export { categoryStore, type CategoryRecord } from './category';
+
+/**
+ * Product Image instances
+ */
+export { productImageStore, type ProductImageRecord } from './productImage';
